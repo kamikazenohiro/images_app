@@ -1,4 +1,5 @@
 class MessagesController < ApplicationController
+  before_action :authenticate_user!, only: [:new]
   before_action :set_message, only: [:edit, :update]
 
   def index
@@ -31,7 +32,7 @@ class MessagesController < ApplicationController
 
   private
   def message_params
-    params.require(:message).permit(:content, images: [])#.merge(user_id: current_user.id)
+    params.require(:message).permit(:content, images: []).merge(user_id: current_user.id)
   end
 
   def set_message
