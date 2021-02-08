@@ -10,6 +10,10 @@
 <% end %>
 
 <% @messages.each do |message| %>
+  <%= "投稿者 #{message.user.nickname}" %>
+  <% if user_signed_in? && current_user.id == message.user_id %>
+    <%= link_to '削除', message_path(message.id), method: :delete %>
+  <% end %>
   <%= message.content %>
   <div class="messages">
     <% message.images.each do |image| %>
@@ -17,5 +21,3 @@
     <% end %>
   </div>
 <% end %>
-
-  <%#= link_to '編集', edit_message_path(message.id)%>
