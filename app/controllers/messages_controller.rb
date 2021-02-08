@@ -1,6 +1,6 @@
 class MessagesController < ApplicationController
   before_action :authenticate_user!, only: [:new]
-  before_action :set_message, only: [:edit, :update]
+  before_action :set_message, only: [:edit, :update, :destroy]
 
   def index
     @messages = Message.all.order('created_at DESC')
@@ -28,6 +28,13 @@ class MessagesController < ApplicationController
     else
       render :edit
     end
+  end
+
+  def destroy
+    if current_user.id == @message.user_id
+      @message.destroy
+    end
+    redirect_to root_path
   end
 
   private
