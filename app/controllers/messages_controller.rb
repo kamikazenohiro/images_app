@@ -2,7 +2,7 @@ class MessagesController < ApplicationController
   before_action :set_message, only: [:edit, :update]
 
   def index
-    @messages = Message.all
+    @messages = Message.all.order('created_at DESC')
   end
 
   def new
@@ -31,7 +31,7 @@ class MessagesController < ApplicationController
 
   private
   def message_params
-    params.require(:message).permit(:content, images: [])
+    params.require(:message).permit(:content, images: [])#.merge(user_id: current_user.id)
   end
 
   def set_message

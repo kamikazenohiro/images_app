@@ -1,5 +1,5 @@
 class Message < ApplicationRecord
-  # has_one_attached :image
+#  belongs_to :user
   has_many_attached :images
-  validates :content, presence: true
+  validates :images, presence: true
 end
