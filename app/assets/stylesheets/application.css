@@ -30,3 +30,27 @@ ul,li {
   padding: 0;
   margin: 0;
 }
+
+ /* ヘッダー */
+
+ header {
+  height: 30px;
+  background-color: #f0f0f0;
+  padding: 20px 0;
+  display: flex;
+}
+
+.heading {
+  width: 50%;
+  margin-left: 5px;
+}
+
+.navbar {
+  width: 50%;
+  padding: 10px;
+}
+
+.nav-lists {
+  display: flex;
+  justify-content: space-around;
+}
