@@ -19,7 +19,7 @@
  body {
   font-size: 15px;
   color: #333;
-  margin: 0 auto;
+  margin: 0 0 0 5px;
 }
 h1,h2,h3,h4,h5,h6,p {
   padding: 10px 0;
@@ -34,20 +34,23 @@ ul,li {
  /* ヘッダー */
 
  header {
-  height: 30px;
+  height: 35px;
   background-color: #f0f0f0;
-  padding: 20px 0;
+  padding: 15px;
   display: flex;
+  margin-bottom: 10px;
 }
 
 .heading {
-  width: 50%;
-  margin-left: 5px;
+  width: 30%;
 }
 
 .navbar {
-  width: 50%;
-  padding: 10px;
+  width: 40%;
+}
+
+.current_user {
+  width: 40%;
 }
 
 .nav-lists {

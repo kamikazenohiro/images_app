@@ -14,11 +14,6 @@
       <div class="heading">
         <h2><%= link_to '画像置き場', root_path %></h2>
       </div>
-      <% if user_signed_in? %>
-        <div>
-          <%= "#{current_user.nickname}さんは、ログインしています" %>
-        </div>
-      <% end %>
       <div class="navbar">
         <ul class="nav-lists">
           <% if user_signed_in? %>
@@ -30,6 +25,11 @@
           <% end %>
         </ul>
       </div>
+      <% if user_signed_in? %>
+        <div class="current_user">
+          <%= "#{current_user.nickname}さん！ようこそ！" %>
+        </div>
+      <% end %>
     </header>
     <%= yield %>
   </body>
