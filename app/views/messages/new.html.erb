@@ -1,3 +1,6 @@
 <h3><%= link_to '画像一覧へ戻る', root_path %></h3>
 <h2>新規投稿</h2>
+  <div class='flash-message'>
+    <%= flash[:miss] %>
+  </div>
 <%= render partial: "form" %>
