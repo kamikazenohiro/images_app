@@ -1,23 +1,20 @@
-<h2>画像置き場トップページ</h2>
-<% if user_signed_in? %>
-  <%= "#{current_user.nickname}さんは、ログインしています" %>
-  <%= link_to "ログアウト", destroy_user_session_path, method: :delete %>
-  <h2><%= link_to '新規投稿', new_message_path %></h2>
-<% else %>
-  <%= link_to "新規登録", new_user_registration_path  %>
-  <%= link_to "ログイン", new_user_session_path %>
-  <br><br>
-<% end %>
-
-<% @messages.each do |message| %>
-  <%= "投稿者 #{message.user.nickname}" %>
-  <% if user_signed_in? && current_user.id == message.user_id %>
-    <%= link_to '削除', message_path(message.id), method: :delete %>
-  <% end %>
-  <%= message.content %>
-  <div class="messages">
-    <% message.images.each do |image| %>
-      <%= image_tag image, class:'images' %>
+<div class="wrapper">
+  <div class="twitter">
+    <a class="twitter-timeline" data-lang="ja" data-width="300" data-theme="dark" href="https://twitter.com/kamikazenohiro1?ref_src=twsrc%5Etfw">Tweets by kamikazenohiro1</a>
+    <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+  </div>
+  <div class="image">
+    <% @messages.each do |message| %>
+      <%= "投稿者 #{message.user.nickname}" %>
+      <% if user_signed_in? && current_user.id == message.user_id %>
+        <%= link_to '削除', message_path(message.id), method: :delete %>
+      <% end %>
+      <%= message.content %>
+      <div class="messages">
+        <% message.images.each do |image| %>
+          <%= image_tag image, class:'images' %>
+        <% end %>
+      </div>
     <% end %>
   </div>
-<% end %>
+</div>

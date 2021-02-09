@@ -15,7 +15,7 @@ class MessagesController < ApplicationController
     if @message.save
       redirect_to root_path
     else
-      render :new
+      redirect_to new_message_path, flash:{miss: '投稿するには画像を選択してください'}
     end
   end
 
