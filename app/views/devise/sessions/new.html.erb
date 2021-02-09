@@ -1,7 +1,10 @@
 <h2>ログイン</h2>
 
 <%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
-  <div class="field">
+    <%= flash[:notice] %>
+    <%= flash[:alert] %>
+    
+  <div class="field"><br />
     <%= f.label :email %><br />
     <%= f.email_field :email, autofocus: true, autocomplete: "email" %>
   </div>
@@ -23,4 +26,4 @@
   </div>
 <% end %>
 
-<%= render "devise/shared/links" %>
+<%= render "/shared/links" %>
