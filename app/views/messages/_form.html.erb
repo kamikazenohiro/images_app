@@ -1,4 +1,5 @@
 <%= form_with model: @message, id: 'new_message', local: true do |f| %>
+  <%= render "/shared/error_messages", model: f.object %>
   <%= f.text_field :content, placeholder: 'type a message' %>
   <%= f.file_field :images, name: 'message[images][]', id: 'message_image' %>
   <%= f.submit '送信' %>
