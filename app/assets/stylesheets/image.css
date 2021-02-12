@@ -1,13 +1,54 @@
+ /* リセットCSS */
+
+ body {
+  font-size: 15px;
+  color: #333;
+  margin: 0 auto;
+}
+h1,h2,h3,h4,h5,h6,p {
+  padding: 10px 0;
+  margin: 0;
+}
+
+ul,li {
+  padding: 0;
+  margin: 0;
+}
+
+/* ヘッダー */
+
+ header {
+  height: 35px;
+  background-color: #f0f0f0;
+  padding: 15px;
+  display: flex;
+  margin-bottom: 10px;
+}
+
+.heading {
+  width: 30%;
+}
+
+.navbar {
+  width: 40%;
+}
+
+.current_user {
+  width: 40%;
+}
+
+.nav-lists {
+  display: flex;
+  justify-content: space-around;
+}
+
+/* 画像投稿機能とTwitterタイムライン */
+
 .wrapper {
   display: flex;
 }
 
-.twitter {
-  background-color: #253141;
-  width: 300px;
-  height: 100vh;
-
-}
+/* 画像とメッセージ */
 
 .image {
   background-color: #FFFFFF;
@@ -16,7 +57,15 @@
 }
 
 img {
-  height: 100px;
-  width: 100px;
+  height: 75px;
+  width: 75px;
   object-fit: contain;
+}
+
+/* Twitterタイムライン */
+
+.twitter {
+  background-color: #253141;
+  width: 300px;
+  height: 100vh;
 }
