@@ -3,10 +3,10 @@
  body {
   font-size: 15px;
   color: #333;
-  margin: 0 auto;
+  margin: 0 0 0 5px;
 }
 h1,h2,h3,h4,h5,h6,p {
-  padding: 10px 0;
+  padding: 5px 0;
   margin: 0;
 }
 
@@ -18,9 +18,8 @@ ul,li {
 /* ヘッダー */
 
  header {
-  height: 35px;
+  height: 65px;
   background-color: #f0f0f0;
-  padding: 15px;
   display: flex;
   margin-bottom: 10px;
 }
@@ -31,10 +30,12 @@ ul,li {
 
 .navbar {
   width: 40%;
+  padding: 10px 0;
 }
 
 .current_user {
   width: 40%;
+  padding: 10px 0;
 }
 
 .nav-lists {
@@ -53,7 +54,6 @@ ul,li {
 .image {
   background-color: #FFFFFF;
   width: calc(100vw - 300px);
-  margin-left: 5px;
 }
 
 img {
