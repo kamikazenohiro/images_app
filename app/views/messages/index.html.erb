@@ -7,7 +7,7 @@
         <%= link_to '削除', message_path(message.id), method: :delete %>
       <% end %>
       <%= message.content %>
-      <div class="messages">
+      <div>
         <% message.images.each do |image| %>
           <%= link_to message_path(message.id) do %>
             <%= image_tag image, class:'images' %>
@@ -16,7 +16,7 @@
       </div>
     <% end %>
   </div>
-    <div class="twitter">
+  <div class="twitter">
     <a class="twitter-timeline" data-lang="ja" data-width="300" data-theme="dark" href="https://twitter.com/kamikazenohiro1?ref_src=twsrc%5Etfw">Tweets by kamikazenohiro1</a>
     <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
   </div>
