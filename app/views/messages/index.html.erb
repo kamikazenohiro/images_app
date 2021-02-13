@@ -9,7 +9,9 @@
       <%= message.content %>
       <div class="messages">
         <% message.images.each do |image| %>
-          <%= image_tag image, class:'images' %>
+          <%= link_to message_path(message.id) do %>
+            <%= image_tag image, class:'images' %>
+          <% end %>
         <% end %>
       </div>
     <% end %>
