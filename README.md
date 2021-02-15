@@ -45,7 +45,7 @@ Ruby, Ruby on Rails / HTML, CSS, javascript / MySQL, Sequel Pro / GitHub / AWS E
 スマホで見た場合、色々と小さすぎるのでレスポンシブデザインを導入したい。
 
 # 今後実装したい機能
-・各投稿へのコメント機能
+・各投稿へのコメント機能<br>
 ・ユーザーの詳細表示機能
 
 # DB設計
