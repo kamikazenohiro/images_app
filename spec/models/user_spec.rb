@@ -26,6 +26,11 @@ RSpec.describe User, type: :model do
         @user.valid?
         expect(@user.errors.full_messages).to include("Nickname can't be blank")
       end
+      it 'ニックネームは１０文字以下が必須であること' do
+        @user.nickname = 'aaaaaaaaaaa'
+        @user.valid?
+        expect(@user.errors.full_messages).to include("Nickname is too long (maximum is 10 characters)")
+      end
       it 'メールアドレスが必須であること' do
         @user.email = nil
         @user.valid?

@@ -6,5 +6,5 @@ class User < ApplicationRecord
 
   has_many :messages
 
-  validates :nickname, presence: true
+  validates :nickname, presence: true, length: { maximum: 10 }
 end
