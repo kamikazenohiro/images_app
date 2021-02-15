@@ -1,13 +1,13 @@
 <div class="image">
-  <div class="image-show">
-    <%= "投稿者 #{@message.user.nickname}" %>
-    <%= @message.created_at %>
-    <% if user_signed_in? && current_user.id == @message.user_id %>
-      <%= link_to '削除', message_path(@message.id), method: :delete %>
-    <% end %>
-    <%= @message.content %>
-    <% @message.images.each do |image| %>
+  <%= "投稿者 #{@message.user.nickname}" %>
+  <%= @message.created_at %>
+  <% if user_signed_in? && current_user.id == @message.user_id %>
+    <%= link_to '削除', message_path(@message.id), method: :delete %>
+  <% end %>
+  <%= @message.content %>
+  <% @message.images.each do |image| %>
+    <div class="image-show">
       <%= image_tag image, class:'image-show' %>
-    <% end %>
-  </div>
+    </div>
+  <% end %>
 </div>
