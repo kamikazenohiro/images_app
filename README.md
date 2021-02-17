@@ -11,11 +11,11 @@
 http://18.180.190.164/
 
 ### Basic認証
-ID: admin
+ID: admin<br>
 Pass: 2222
 
 ### テスト用アカウント
-メールアドレス: sa@sa
+メールアドレス: sa@sa<br>
 パスワード: sasasa
 
 # 制作背景(意図)
