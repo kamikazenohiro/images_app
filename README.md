@@ -31,7 +31,7 @@ PS４や５の機能でTwitterにアップロードしたゲーム画像をた�
 # DEMO
 
 ## トップページや投稿機能など
-https://gyazo.com/5ffe012c11907229818718c42d23612a
+https://gyazo.com/b11290fc4bb48fff6ef2df0569e24f58
 
 
 # 工夫したポイント
