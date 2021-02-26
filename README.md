@@ -42,7 +42,7 @@ https://gyazo.com/b11290fc4bb48fff6ef2df0569e24f58
 Ruby, Ruby on Rails / HTML, CSS, javascript / MySQL, Sequel Pro / GitHub / AWS EC2, Capistrano, nginx, unicorn / Visual Studio Code /
 
 # 課題
-投稿画面での画像投稿時に、２枚目以降のファイルを選択時に毎回新しく出てきたファイルを選択を選ばないと、エラーは出ないものの挙動がおかしくなる。<br>
+投稿画面での画像投稿時に、２枚目以降のファイルを選択時に毎回新しく出てきたファイルを選択を選ばないと、エラーは出ないが挙動はおかしくなる。<br>
 スマホで見た場合、色々と小さすぎるのでレスポンシブデザインを導入したい。
 
 # 今後実装したい機能
