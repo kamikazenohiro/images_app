@@ -10,10 +10,6 @@ Twitter画像共有広場
 # 本番環境
 http://18.180.190.164/
 
-### Basic認証
-ID: admin<br>
-Pass: 2222
-
 ### テスト用アカウント
 メールアドレス: sa@sa<br>
 パスワード: sasasa
